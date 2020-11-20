@@ -1,72 +1,68 @@
-COMMON
-    nav menu
-        Home
-        About
-        Projects
-        Contact
-    
-    footer
-        Contact
-            Email: austinkentesh@gmail.com
-            GitHub: AustinEsh
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
 
-    
-SPECIFIC
-    home page
-        header
-            Austin Esh
-            Software Developer in Training
+        <title>Austin Esh</title>
 
-        content
-            About Me
-                I am a computer software engineering student at Thaddeus Stevens College of Technology. I am also training at
-                Eagle Business Software to become a software developer for the company.
-                See More
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    </head>
 
-            My Projects
-                Here are some of my projects that I have completed at TSCT.
-                See Projects
+    <body>
+        <header>
+            <h1>
+                Austin Esh
+            </h1>
 
+            <p>
+                Software Developer in Training
+            </p>
+        </header>
 
-    about page
-        header
-            About Me
-        
-        content
-            Education
-                Thaddeus Stevens College of Technology
-                    I am currently a first-year computer software engineering student at TSCT as of fall 2020. As a TSCT
-                    student, I have learned how to create small, interactive websites.
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-                High school (graduated 2020)
-                    I was homeschooled, and began learning software development during my first year in High School.
+        <a href="about.html">
+            <h2>
+                About Me
+            </h2>
 
-            Employment
-                Eagle Business Management Software
-                    I am currently an intern at EBMS as of fall 2020. 
+            <img src="assets/images/profile2.jpeg"/>
 
-                Stoltzfus Landscaping (2016-2020)
+            <p>
+                I am a computer software engineering student at Thaddeus Stevens College of Technology.
+            </p>
+            <p>
+                I am also training at Eagle Business Software to become a software developer for the company.
+            </p>
+        </a>
 
-            Skills
-                C#
-                JavaScript
-                HTML
-                CSS
+        <a href="projects.html">
+            <h2>
+                My Projects
+            </h2>
 
-            Interests and Hobbies
-                I enjoy playing piano and sports, especially volleyball.
-            
-    projects page
-        header
-            My Projects
-            
-        content
-            Tic-tac-toe (collaborative) 11/13/2020
-                This is my first collaborative project (with JodyWinters), and the first to be made accessible online.
-                Visit Site
-                See Code
+            <img src="assets/images/tic-tac-toe.png"/>
 
-            Responsive Landing Page 10/30/2020
-                This project was mainly to practice styling websites. The goal was to replicate a sample website, and make it
-                responsive to the size of the window.
-                See Code
+            <p>
+                Click here to see some of the projects that I have completed at TSCT
+            </p>
+        </a>
+
+        <footer id="contact">
+            <h2>
+                Contact
+            </h2>
+
+            <ul>
+                <li>Email: <a href="mailto:austinkentesh@gmail.com">austinkentesh@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/AustinEsh">AustinEsh</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
