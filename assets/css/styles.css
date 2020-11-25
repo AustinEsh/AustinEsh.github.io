@@ -1,0 +1,94 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header,
+footer {
+    height: 100vh;
+}
+
+header {
+    padding-top: 40vh;
+    text-align: center;
+}
+
+img {
+    height: 150px;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 150px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav > a {
+    margin-left: 5vw;
+}
+
+article.link > a {
+    color: inherit;
+    display: flex;   
+    text-decoration: inherit;
+}
+
+footer {
+    padding: 0 35vw 0;
+    text-align: center;
+}
+
+footer > ul {
+    text-align: left;
+}
+
+article.about > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15vw 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+article.about > div > figure,
+article.about > div > section {
+    margin-right: 0;
+    width: 35vw;
+}
+
+article.project {
+    height: 75vh;
+    text-align: center;
+    width: 75vw;
+}
+
+#tic-tac-toe {
+    background-color: #d4d4d4;
+    background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/tic-tac-toe.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 115%;
+
+}
+
+#responsive-landing-page {
+    background-color: rgb(236, 236, 236);
+    background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/landing-page.jpeg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 115%;
+}
+
+article.project > a {
+    display: block;
+}
+
+article.project > h2,
+article.project > p,
+article.project > a {
+    visibility: hidden;
+}
