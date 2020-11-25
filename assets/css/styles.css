@@ -90,5 +90,22 @@ article.project > a {
 article.project > h2,
 article.project > p,
 article.project > a {
+    color: white;
     visibility: hidden;
+}
+
+#tic-tac-toe:hover {
+    background-color: rgb(48, 46, 46);
+    background-image: none;
+}
+
+#responsive-landing-page:hover {
+    background-color: rgb(48, 46, 46);
+    background-image: none;
+}
+
+article.project:hover > h2,
+article.project:hover > p,
+article.project:hover > a {
+    visibility: visible;
 }
