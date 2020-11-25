@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
 *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
 }
 
+body {
+    background-color: rgb(231, 231, 222);
+    font-family: 'Hind', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 header,
 footer {
+    color: rgb(212, 205, 205);
+    background-color: #061425;
     height: 100vh;
 }
 
@@ -13,31 +27,100 @@ header {
     text-align: center;
 }
 
-img {
-    height: 150px;
-    object-fit: cover;
-    object-position: 50% 0;
-    width: 150px;
+.arrow-black,
+.arrow-white {
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    display: inline-block;
+    margin: 10px 49% 0;
+    padding: 6px;
+    transform: rotate(45deg);
+}
+
+.arrow-black {
+    border-color: black;
+}
+
+.arrow-white {
+    border-color: white;
 }
 
 nav {
+    background: linear-gradient(rgb(231, 231, 222), rgb(231, 231, 222), rgb(231, 231, 222), rgb(231, 231, 222, .99),
+    rgb(231, 231, 222, .90));
+    display: flex;
+    margin-bottom: 20vh;
+    padding: 2vh 0;
     position: sticky;
     top: 0;
 }
 
+nav > a:first-of-type {
+    margin-left: 10vw;
+}
+
 nav > a {
+    display: block;
     margin-left: 5vw;
+    text-align: center;
+    text-decoration: none;
+    width: 6vw;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+.articles {
+    height: 73vh;
+}
+
+article.link > a > figure > img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 17vw;
+}
+
+article.link > a > figure {
+    height: 200px;
+}
+
+article.link > a > section {
+    margin: 20px 2vw 0;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 article.link > a {
     color: inherit;
-    display: flex;   
+    background-color: #b4bcbe;
+    border: 1px solid black;
+    display: flex;
+    margin: auto 5vw 4vh auto;
     text-decoration: inherit;
+    width: 80vw;
+}
+
+article.link > a {
+    transition-property: box-shadow width;
+    transition-duration: .5s;
+}
+
+article.link > a:hover {
+    box-shadow: 10px 5px 10px;
+    width: 81vw;
 }
 
 footer {
-    padding: 0 35vw 0;
+    padding: 20vh 35vw 0;
     text-align: center;
+}
+
+footer > h2 {
+    margin-bottom: 5vh;
 }
 
 footer > ul {
