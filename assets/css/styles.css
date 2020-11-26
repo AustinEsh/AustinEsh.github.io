@@ -37,6 +37,31 @@ header > h1 {
     margin-bottom: 1vh;
 }
 
+footer {
+    padding: 20vh 35vw 0;
+    text-align: center;
+}
+
+footer > h2 {
+    margin-bottom: 5vh;
+}
+
+footer > ul {
+    text-align: left;
+}
+
+footer > ul > li {
+    margin-bottom: 2px;
+}
+
+footer > ul > li > a {
+    color: #e7e7de;
+}
+
+footer > ul > li > a:hover {
+    color: #008891;
+}
+
 .arrow-black,
 .arrow-white {
     border-width: 0 3px 3px 0;
@@ -57,7 +82,7 @@ header > h1 {
 
 footer > .arrow-white {
     margin-top: 50vh;
-    transform: rotate(225deg);  
+    transform: rotate(225deg);
 }
 
 nav {
@@ -74,6 +99,7 @@ nav > a:first-of-type {
 }
 
 nav > a {
+    color: #00587a;
     display: block;
     margin-left: 5vw;
     text-align: center;
@@ -82,6 +108,7 @@ nav > a {
 }
 
 nav > a:hover {
+    color: #008891;
     text-decoration: underline;
 }
 
@@ -127,19 +154,6 @@ article.link > a {
 article.link > a:hover {
     box-shadow: 10px 5px 10px;
     width: 81vw;
-}
-
-footer {
-    padding: 20vh 35vw 0;
-    text-align: center;
-}
-
-footer > h2 {
-    margin-bottom: 5vh;
-}
-
-footer > ul {
-    text-align: left;
 }
 
 article.about {
@@ -194,10 +208,6 @@ article.project {
     transition-duration: 1s;
 }
 
-article.project > a {
-    display: block;
-}
-
 article.project > h2,
 article.project > p,
 article.project > a {
@@ -205,6 +215,14 @@ article.project > a {
     margin: auto auto;
     opacity: 0;
     width: 75%;
+}
+
+article.project > a {
+    display: block;
+}
+
+article.project > a:hover {
+    color: #008891;
 }
 
 article.project > h2 {
