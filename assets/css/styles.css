@@ -15,6 +15,11 @@ h1, h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
 header,
 footer {
     color: rgb(212, 205, 205);
@@ -23,8 +28,13 @@ footer {
 }
 
 header {
+    font-size: 2vw;
     padding-top: 40vh;
     text-align: center;
+}
+
+header > h1 {
+    margin-bottom: 1vh;
 }
 
 .arrow-black,
@@ -32,8 +42,8 @@ header {
     border-width: 0 3px 3px 0;
     border-style: solid;
     display: inline-block;
-    margin: 10px 49% 0;
-    padding: 6px;
+    margin: 2vh 49% 0;
+    padding: 10px;
     transform: rotate(45deg);
 }
 
@@ -45,11 +55,15 @@ header {
     border-color: white;
 }
 
+footer > .arrow-white {
+    margin-top: 50vh;
+    transform: rotate(225deg);  
+}
+
 nav {
     background: linear-gradient(rgb(231, 231, 222), rgb(231, 231, 222), rgb(231, 231, 222), rgb(231, 231, 222, .99),
     rgb(231, 231, 222, .90));
     display: flex;
-    margin-bottom: 20vh;
     padding: 2vh 0;
     position: sticky;
     top: 0;
@@ -75,7 +89,11 @@ nav > a:hover {
     height: 73vh;
 }
 
-article.link > a > figure > img {
+article.link:first-of-type {
+    margin-top: 20vh;
+}
+
+img {
     height: 100%;
     object-fit: cover;
     object-position: 50% 0;
@@ -101,12 +119,9 @@ article.link > a {
     display: flex;
     margin: auto 5vw 4vh auto;
     text-decoration: inherit;
-    width: 80vw;
-}
-
-article.link > a {
     transition-property: box-shadow width;
     transition-duration: .5s;
+    width: 80vw;
 }
 
 article.link > a:hover {
@@ -127,43 +142,56 @@ footer > ul {
     text-align: left;
 }
 
-article.about > div {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 15vw 0;
+article.about {
+    height: 93vh;
 }
 
-h1 {
-    text-align: center;
+article.about > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 75vh;
+    padding: 0 15vw 0;
+    align-items: center;
 }
 
 article.about > div > figure,
 article.about > div > section {
-    margin-right: 0;
-    width: 35vw;
+    margin: auto;
+    width: 30vw;
+}
+
+article.about > div > figure > img {
+    border-style: outset;
+    border-color: #006992;
+    border-width: 5px;
+    border-radius: 100%;
 }
 
 article.project {
-    height: 75vh;
+    height: 35vw;
+    margin: auto auto 7vh;
+    padding-top: 5vw;
     text-align: center;
-    width: 75vw;
+    width: 70vw;
 }
 
 #tic-tac-toe {
-    background-color: #d4d4d4;
     background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/tic-tac-toe.png");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: 115%;
-
 }
 
 #responsive-landing-page {
-    background-color: rgb(236, 236, 236);
     background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/landing-page.jpeg");
+}
+
+#tic-tac-toe,
+#responsive-landing-page {
+    background-blend-mode: darken;
     background-position: 50% 0;
     background-repeat: no-repeat;
-    background-size: 115%;
+    background-size: cover;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 article.project > a {
@@ -173,22 +201,38 @@ article.project > a {
 article.project > h2,
 article.project > p,
 article.project > a {
-    color: white;
-    visibility: hidden;
+    color: rgb(199, 199, 199);
+    margin: auto auto;
+    opacity: 0;
+    width: 75%;
 }
 
-#tic-tac-toe:hover {
-    background-color: rgb(48, 46, 46);
-    background-image: none;
+article.project > h2 {
+    margin-bottom: 1.5vw;
 }
 
-#responsive-landing-page:hover {
-    background-color: rgb(48, 46, 46);
-    background-image: none;
+article.project > p {
+    margin-bottom: 2vw;
 }
 
 article.project:hover > h2,
 article.project:hover > p,
 article.project:hover > a {
-    visibility: visible;
+    margin-bottom: 0;
+    opacity: 100;   
+    transition-property: opacity, margin-bottom;
+    transition-duration: 1s;
+}
+
+article.project:hover > h2 {
+    margin-bottom: .75vw;
+}
+
+article.project:hover > p {
+    margin-bottom: 1vw;
+}
+
+#tic-tac-toe:hover,
+#responsive-landing-page:hover {
+    background-color: rgb(39, 36, 36);
 }
