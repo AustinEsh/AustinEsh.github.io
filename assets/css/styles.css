@@ -177,11 +177,11 @@ article.project {
 }
 
 #tic-tac-toe {
-    background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/tic-tac-toe.png");
+    background-image: url(../images/tic-tac-toe.png);
 }
 
 #responsive-landing-page {
-    background-image: url("/Users/akesh201/code/portfolio/AustinEsh.github.io/assets/images/landing-page.jpeg");
+    background-image: url(../images/landing-page.jpeg);
 }
 
 #tic-tac-toe,
