@@ -28,13 +28,8 @@ footer {
 }
 
 header {
-    font-size: 2vw;
     padding-top: 40vh;
     text-align: center;
-}
-
-header > h1 {
-    margin-bottom: 1vh;
 }
 
 footer {
@@ -313,6 +308,23 @@ article.project:hover > p {
     .arrow-black {
         display: none;
     }
+
+    .articles {
+        height: 110vh;
+    }
+
+    article.project > h2 {
+        font-size: 4vw;
+    }
+
+    article.project > p,
+    article.project > a {
+        font-size: 2vw;
+    }
+
+    footer {
+        padding: 20vh 15vw 0;
+    }
 }
 
 @media (hover: none) {
@@ -320,7 +332,7 @@ article.project:hover > p {
     article.project > p,
     article.project > h2 {
         margin-bottom: 0;
-        opacity: 100;   
+        opacity: 100;
         transition-property: opacity, margin-bottom;
         transition-duration: 1s;
     }
