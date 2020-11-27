@@ -1,12 +1,12 @@
+const burgerMenu = document.querySelector(".burger-menu");
+const middleLine = document.querySelector(".middle-line");
+let firstTime = true;
+
 const linkLoop = function(disp) {
     for (link of document.querySelectorAll(".nav-link")) {
         link.style.display = disp;
     }
 }
-
-let burgerMenu = document.querySelector(".burger-menu");
-let firstTime = true;
-middleLine = document.querySelector(".middle-line");
 
 burgerMenu.addEventListener("click", () => {
     if (document.querySelector("nav").lastElementChild.style.display === "none" || firstTime === true) {
