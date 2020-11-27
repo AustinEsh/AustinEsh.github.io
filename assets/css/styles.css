@@ -337,6 +337,15 @@ article.project:hover > p {
         transition-duration: 1s;
     }
 
+    article.project > h2 {
+        margin-bottom: .75vw;
+    }
+    
+    article.project > p,
+    article.project > a {
+        margin-bottom: 1vw;
+    }
+
     #tic-tac-toe,
     #responsive-landing-page {
         background-color: rgb(73, 68, 68);
