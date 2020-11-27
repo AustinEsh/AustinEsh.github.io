@@ -94,11 +94,25 @@ nav {
     top: 0;
 }
 
+.burger-menu {
+    display: none;
+    height: 25px;
+    margin-left: 20px;
+    width: 40px;
+}
+
+.burger-menu > div {
+    background-color: black;
+    border-radius: 40%;
+    height: 20%;
+    margin-bottom: 20%;
+}
+
 nav > a:first-of-type {
     margin-left: 10vw;
 }
 
-nav > a {
+a.nav-link {
     color: #00587a;
     display: block;
     margin-left: 5vw;
@@ -107,7 +121,7 @@ nav > a {
     width: 6vw;
 }
 
-nav > a:hover {
+a.nav-link:hover {
     color: #008891;
     text-decoration: underline;
 }
@@ -226,11 +240,17 @@ article.project > a:hover {
 }
 
 article.project > h2 {
+    font-size: 2vw;
     margin-bottom: 1.5vw;
 }
 
 article.project > p {
     margin-bottom: 2vw;
+}
+
+article.project > p,
+article.project > a {
+    font-size: 1.25vw;
 }
 
 article.project:hover > h2,
@@ -253,4 +273,60 @@ article.project:hover > p {
 #tic-tac-toe:hover,
 #responsive-landing-page:hover {
     background-color: rgb(39, 36, 36);
+}
+
+@media (max-width: 599px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav > a:first-of-type {
+        margin: 10px 25px auto;
+    }
+
+    a.nav-link {
+        display: none;
+        margin-left: 25px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 925px) {
+    article.about {
+        height: 150vw;
+    }
+
+    article.about > div {
+        display: block;
+    }
+
+    article.about > div > figure,
+    article.about > div > section {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .arrow-white,
+    .arrow-black {
+        display: none;
+    }
+}
+
+@media (hover: none) {
+    article.project > a,
+    article.project > p,
+    article.project > h2 {
+        margin-bottom: 0;
+        opacity: 100;   
+        transition-property: opacity, margin-bottom;
+        transition-duration: 1s;
+    }
+
+    #tic-tac-toe,
+    #responsive-landing-page {
+        background-color: rgb(73, 68, 68);
+    }
 }
