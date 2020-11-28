@@ -31,7 +31,16 @@ burgerMenu.addEventListener("click", () => {
 });
 
 document.querySelector("nav").lastElementChild.addEventListener(("click"), () => {
-    linkLoop("none");
+    if (document.querySelector("footer").clientWidth < 600) {
+        linkLoop("none");
+
+        middleLine.firstElementChild.style.transform = "rotate(0)";
+        middleLine.lastElementChild.style.transform = "rotate(0)";
+        setTimeout( () => {
+            burgerMenu.firstElementChild.style.visibility = "visible";
+            burgerMenu.lastElementChild.style.visibility = "visible";
+        }, 500);
+    }
 });
 
 let flakes = [];
