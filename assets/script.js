@@ -35,7 +35,7 @@ burgerMenu.addEventListener("click", () => {
 });
 
 document.querySelector("nav").lastElementChild.addEventListener(("click"), () => {
-    if (document.querySelector("footer").clientWidth < 600) {
+    if (document.querySelector("body").clientWidth < 600) {
         linkLoop("none");
         hide();
     }
