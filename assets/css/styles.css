@@ -217,6 +217,10 @@ article.project {
     width: 70vw;
 }
 
+#portfolio {
+    background-image: url(../images/portfolio.png);
+}
+
 #tic-tac-toe {
     background-image: url(../images/tic-tac-toe.png);
 }
@@ -225,6 +229,7 @@ article.project {
     background-image: url(../images/landing-page.jpeg);
 }
 
+#portfolio,
 #tic-tac-toe,
 #responsive-landing-page {
     background-blend-mode: darken;
@@ -283,6 +288,7 @@ article.project:hover > p {
     margin-bottom: 1vw;
 }
 
+#portfolio:hover,
 #tic-tac-toe:hover,
 #responsive-landing-page:hover {
     background-color: rgb(39, 36, 36);
@@ -368,6 +374,7 @@ article.project:hover > p {
         margin-bottom: 1vw;
     }
 
+    #portfolio,
     #tic-tac-toe,
     #responsive-landing-page {
         background-color: rgb(73, 68, 68);
