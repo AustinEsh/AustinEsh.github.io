@@ -8,7 +8,7 @@ const linkLoop = function(disp) {
     }
 }
 
-const show = function() {
+const hide = function() {
     middleLine.firstElementChild.style.transform = "rotate(0)";
     middleLine.lastElementChild.style.transform = "rotate(0)";
     setTimeout( () => {
@@ -28,7 +28,7 @@ burgerMenu.addEventListener("click", () => {
     } else {
         disp = "none";
         
-        show();
+        hide();
     }
 
     linkLoop(disp);
@@ -37,7 +37,15 @@ burgerMenu.addEventListener("click", () => {
 document.querySelector("nav").lastElementChild.addEventListener(("click"), () => {
     if (document.querySelector("footer").clientWidth < 600) {
         linkLoop("none");
+        hide();
+    }
+});
 
-        show();
+window.addEventListener("resize", () => {
+    if (document.querySelector("body").clientWidth  >= 600) {
+        linkLoop("block");
+    } else {
+        hide();
+        linkLoop("none");
     }
 });
