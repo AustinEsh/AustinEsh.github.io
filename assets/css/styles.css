@@ -305,6 +305,10 @@ article.project:hover > p {
     .burger-menu {
         display: block;
     }
+
+    .burger-menu:hover {
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 925px) {
