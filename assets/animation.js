@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-let interval = (1600 - header.clientWidth) * 10000;
+let interval = (1600 - header.clientWidth / 2) * 1500;
 let flakes = [];
 
 flakes = [];
@@ -31,6 +31,8 @@ const backgroundAnimation = function() {
     header.appendChild(flake.f);
     flakes.push(flake);
 }
+
+backgroundAnimation();
 
 setInterval( () => {
     const rand4 = Math.random();
