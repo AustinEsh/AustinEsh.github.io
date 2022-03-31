@@ -237,7 +237,9 @@ article.project {
 
 #portfolio,
 #tic-tac-toe,
-#responsive-landing-page {
+#responsive-landing-page,
+#dom-adventure-game:hover,
+#shopping-cart:hover {
     background-blend-mode: darken;
     background-position: 50% 0;
     background-repeat: no-repeat;
@@ -296,7 +298,9 @@ article.project:hover > p {
 
 #portfolio:hover,
 #tic-tac-toe:hover,
-#responsive-landing-page:hover {
+#responsive-landing-page:hover,
+#dom-adventure-game:hover,
+#shopping-cart:hover {
     background-color: rgb(39, 36, 36);
 }
 
@@ -382,7 +386,9 @@ article.project:hover > p {
 
     #portfolio,
     #tic-tac-toe,
-    #responsive-landing-page {
+    #responsive-landing-page,
+    #dom-adventure-game:hover,
+    #shopping-cart:hover {
         background-color: rgb(73, 68, 68);
     }
 }
