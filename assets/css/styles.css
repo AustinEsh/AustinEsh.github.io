@@ -227,6 +227,10 @@ article.project {
     background-image: url(../images/landing-page.jpeg);
 }
 
+#dom-adventure-game {
+    background-image: url(../images/dom-adventure-game.png);
+}
+
 #portfolio,
 #tic-tac-toe,
 #responsive-landing-page {
