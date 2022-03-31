@@ -231,6 +231,10 @@ article.project {
     background-image: url(../images/dom-adventure-game.png);
 }
 
+#shopping-cart {
+    background-image: url(../images/shopping-cart.png);
+}
+
 #portfolio,
 #tic-tac-toe,
 #responsive-landing-page {
