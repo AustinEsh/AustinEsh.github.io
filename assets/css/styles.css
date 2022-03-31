@@ -238,8 +238,8 @@ article.project {
 #portfolio,
 #tic-tac-toe,
 #responsive-landing-page,
-#dom-adventure-game:hover,
-#shopping-cart:hover {
+#dom-adventure-game,
+#shopping-cart {
     background-blend-mode: darken;
     background-position: 50% 0;
     background-repeat: no-repeat;
@@ -387,8 +387,8 @@ article.project:hover > p {
     #portfolio,
     #tic-tac-toe,
     #responsive-landing-page,
-    #dom-adventure-game:hover,
-    #shopping-cart:hover {
+    #dom-adventure-game,
+    #shopping-cart {
         background-color: rgb(73, 68, 68);
     }
 }
